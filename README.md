@@ -1,8 +1,6 @@
 # react-mapbox
 
-Repository contains a React application featuring the Mapbox mapping platform. The application features react-router and redux. The prupose of the application is to create an interactive journal to map and save locations where you have traveled. 
-
-I've always wanted a map hanging on my wall with a pins stuck in it that represent places I've been. Then I thought, why not just make an app for that? Please feel free to contribute. 
+Repository contains a React application featuring the Mapbox mapping platform. The prupose of the application is to explore a mapbox React wrapper called react-mapbox-gl as well as demo mapbox's 3D functionality.
 
 ## Getting Started
 

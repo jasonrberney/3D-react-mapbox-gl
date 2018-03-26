@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactMapboxGl, { Layer } from 'react-mapbox-gl';
+import Geocoder from '../Geocoder/Geocoder.jsx'
 
 const Map = ReactMapboxGl({ accessToken: "pk.eyJ1IjoiamFzb25yYmVybmV5IiwiYSI6ImNqZjRoaWZzdTEzaGwyd2xucWRwZjdrZnkifQ.6sggCRKfF9kYMDjy-eDYtg" });
 
@@ -39,10 +40,10 @@ class ThreeD extends Component {
     super(props)
 
     this.state = {
-      zoom: [15],
+      zoom: [14],
       bearing: [-17.6],
       pitch: [45],
-      center: [1.3521, 1.8198]
+      center: [-122.3321, 47.6062]
     }
   }
 
@@ -67,6 +68,7 @@ class ThreeD extends Component {
           minZoom={14}
           paint={paintLayer}
         />
+        <Geocoder Map={Map} />
       </Map>
     );
   }
